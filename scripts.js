@@ -70,7 +70,7 @@ Post.prototype.render = function() {
     var index = $post.attr('data-index');
 
     // remove post from the `Post.all` array (model)
-    post.all.splice(index, 1);
+  Post.all.splice(index, 1);
     console.log(Post.all);
 
     // remove post from the DOM (view)
