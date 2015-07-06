@@ -1,0 +1,15 @@
+.submissionOne {
+	width: 550px;
+	border: 1px solid #999999;
+	padding: 5px; 
+}
+.submissionTwo {
+	width: 550px; 
+	height: 150px; 
+	border: 1px solid #999999; 
+	padding: 5px; }
+
+.container{
+	margin-bottom: 10px;
+}	
+

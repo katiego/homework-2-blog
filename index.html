@@ -8,6 +8,7 @@
 
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="style.css">	
+<title>Say something.</title>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="site-heading">
-                        <h1></h1>
+                        <h1>Say something.</h1>
                         <hr class="small">
                         <span class="subheading"></span>
                     </div>
@@ -29,21 +30,19 @@
 <div class="container">
 	<div class="row">
 	  <div class="col-md-6 col-md-offset-3">
-	    <h1 class="text-center">To Do List</h1>
-	    <hr>
-	    <form class="text-center" id="new-todo">
+	    <form class="text-center" id="new-post">
 	      <div class="form-group">
-	        <input class="form-control" id="todo-name" placeholder="What do you need to do today?" autofocus>
+	        <input class="form-control submissionOne" id="post-date" placeholder="Date mm/dd" type="textarea" autofocus>
 	      </div>
 	      <div class="form-group">
-	        <input class="form-control" id="todo-desc" placeholder="Add task details">
+	        <textarea class="form-control submissionTwo" type="textarea" id="post-text" placeholder="All of your thoughts." class="span6" rows="3" placeholder="What's up?" required></textarea>
 	      </div>
 	      <div class="form-group">
-	        <input type="submit" class="btn btn-success" value="Add New To Do">
+	        <input type="submit" class="btn btn-success" value="Publish">
 	      </div>
 	    </form>
 	    <hr>
-	    <div id="todo-list"></div>
+	    <div id="post-list"></div>
 	  </div>
 	</div>
 </div>
@@ -62,10 +61,10 @@
   <script type="text/javascript" src="scripts.js"></script>
 
   <!-- underscore template -->
-  <script type="text/template" id="todo-template">
-    <div class="todo">
+  <script type="text/template" id="post-template">
+    <div class="post">
       <p>
-        <span class="todo-text"><%= name %> - <%= desc %></span>
+        <span class="todo-text"> <%= date %> - <%= text %></span>
         &nbsp;
         <button type="button" class="close delete" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </p>
